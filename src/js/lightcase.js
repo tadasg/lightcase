@@ -553,9 +553,15 @@
 					break;
 				default:
 					if (_self.objectData.url) {
+						//$object.load(function () {
+						//	_self._showContent($object);
+						//});
 						$object.on('load', function () {
 							_self._showContent($object);
 						});
+						//$object.error(function () {
+						//	_self.error();
+						//});
 						$object.on('error', function () {
 							_self.error();
 						});
